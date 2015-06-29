@@ -1,0 +1,816 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>The Gents Guide To Style</title>
+
+<link rel="stylesheet" type="text/css" href="main.css" />
+<link rel="stylesheet" href="resources/css/landing.css" type="text/css" />
+<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+
+<!-- DAAPWORKS CSS -->
+<link rel="stylesheet" href="fonts/stylesheet.css">
+<!--<link rel="stylesheet" href="css/style.css">-->
+
+<!-- LIGHT BOX -->
+<!--<script type="text/javascript" src="js/prototype.js"></script>
+<script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>-->
+
+<!-- SHADOW BOX -->
+<link rel="stylesheet" type="text/css" href="shadowbox.css">
+<script type="text/javascript" src="resources/shadowbox.js"></script>
+<script type="text/javascript">
+Shadowbox.init();
+</script>
+
+
+
+    
+<script type="text/javascript" src="resources/js/jquerylibrary.js"></script>
+<script type="text/javascript" src="resources/js/script.js"></script>
+<!--<script type="text/javascript" src="resources/js/devices.js"></script>
+<script type="text/javascript" src="resources/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="resources/js/landing.js"></script>-->
+
+
+<!--[if lte IE 7]>
+<style type="text/css">
+ul li{
+	display:inline;
+	/*float:left;*/
+}
+</style>
+<![endif]-->
+
+<!--PrettyBox-->
+<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function(){
+    $("a[rel^='prettyPhoto']").prettyPhoto();
+  });
+</script>
+
+<script type="text/javascript">
+
+/*** 
+    Simple jQuery Slideshow Script
+    Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
+***/
+
+/* SLIDE SHOW 3  (how-to) */
+function slideSwitch3() {
+    var $active = $('#slideshow3 IMG.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow3 IMG:last');
+
+    // use this to pull the images in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow3 IMG:first');
+
+    // uncomment the 3 lines below to pull the images in random order
+    
+    // var $sibs  = $active.siblings();
+    // var rndNum = Math.floor(Math.random() * $sibs.length );
+    // var $next  = $( $sibs[ rndNum ] );
+
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch3()", 5000 );
+});
+
+
+
+
+/* SLIDE SHOW 4 (Inspiration) */
+function slideSwitch4() {
+    var $active = $('#slideshow4 IMG.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow4 IMG:last');
+
+    // use this to pull the images in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow4 IMG:first');
+
+    // uncomment the 3 lines below to pull the images in random order
+    
+    // var $sibs  = $active.siblings();
+    // var rndNum = Math.floor(Math.random() * $sibs.length );
+    // var $next  = $( $sibs[ rndNum ] );
+
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch4()", 5000 );
+});
+
+/* SLIDE SHOW 5 (Handbook) */
+function slideSwitch5() {
+    var $active = $('#slideshow5 IMG.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow5 IMG:last');
+
+    // use this to pull the images in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow5 IMG:first');
+
+    // uncomment the 3 lines below to pull the images in random order
+    
+    // var $sibs  = $active.siblings();
+    // var rndNum = Math.floor(Math.random() * $sibs.length );
+    // var $next  = $( $sibs[ rndNum ] );
+
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch5()", 5000 );
+});
+
+</script>
+
+<!-- SHADOW BOX -->
+<link rel="stylesheet" type="text/css" href="resources/css/shadowbox.css">
+<script type="text/javascript" src="resources/js/shadowbox.js"></script>
+<script type="text/javascript">
+Shadowbox.init();
+</script>
+<style>
+	h1 {
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:16px;
+		font-weight:bold;
+		text-transform:uppercase;
+		color:black;	
+	}
+	.HeaderRegularWeightFont {
+		font-weight:100;
+		font-style:italic;	
+		text-transform:none;
+	}
+	.smallcaps{
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-variant:small-caps;	
+		font-weight:bold;
+		color:black;
+	}
+	#slideFeature {
+		width:1280px;
+		height:720px;
+		background-image : url('img/sample_slides/Slides_features2.png');
+		font-size:16px;
+		line-height:24px;
+	}
+	#slideFeatureCopy {
+		width: 268px;
+		padding-left: 50px;
+		text-align : left;
+		float:left;
+	}
+	#slideFeatureCopy img{
+		margin-bottom:34px;
+		
+	}
+	#slideFeatureCopyColoum {
+		width:268px;	
+		padding: 45px 0px 0px 360px;
+		text-align:left;
+	}
+	#slideFeatureCopy p {
+		text-align : left;	
+		padding:40px 0px 0px 0px;
+	}
+	#slideFeatureCopy a {
+		color:#6ec2c2;	
+		font-style:italic;
+		font-size:16px;
+	}
+	#overviewIcons {
+		height: 172px;
+		width: 1280px;
+		padding: 130px 0px 0px 0px;
+		text-align: center;
+		float: left;
+	}
+	#overviewIcons ul{
+		display: inline;
+	}
+	#overviewIcons li {
+		height: 133px;
+		width: 270px;
+		padding: 0px 25px 0px 0px;
+	}
+	#overviewIcons p {
+		text-align: left;
+		width: 180px;
+		float: right;
+		top: -100px;
+		padding: 0px 0px 0px 10px;
+	}
+	#overviewIcons img {
+		float: left;
+		boarder: 1px solid red;
+	}
+	#overviewIcons a{
+		height: 0px;
+	}
+	#slide1 {
+		width : 1280px;
+		height : 720px;
+		background-image : url('img/sample_slides/Slides_01.png');
+		font-size:16px;
+		line-height:24px;
+		}
+	#slide1Copy {
+		width: 400px;
+		padding-top: 270px;
+		padding-left: 860px;
+		text-align : left;
+	}
+	#slide2 {
+		width:1280px;
+		height:720px;
+		background-image : url('img/sample_slides/Slides_02.png');
+		font-size:16px;
+		line-height:24px;
+	}
+	#slide2VideoLaunch {
+		text-align:left;
+		padding:141px 0px 0px 227px;
+		float:left;
+			
+	}
+	#slide2Copy {
+		width: 268px;
+		padding-top: 100px;
+		padding-left: 700px;
+		text-align : left;
+	}
+	
+	#slide2Copy p {
+		text-align : left;	
+		padding:40px 0px 0px 0px;
+	}
+	#slide2Copy a {
+		color:red;	
+		font-style:italic;
+		font-size:16px;
+	}
+	
+	#screenMod2 {
+		padding: 37px 0px 0px 600px;
+		
+	}
+	#screenMod2 img {
+		margin-right:20px;	
+		border: 1px solid black;
+	}
+	
+	#slide3 {
+		width:1280px;
+		height:720px;
+		background-image : url('img/sample_slides/Slides_03.png');
+		font-size:16px;
+		line-height:24px;
+	}
+	#slide3Copy {
+		width: 268px;
+		padding-top: 100px;
+		padding-left: 700px;
+		text-align : left;
+	}
+	#slide3Copy p {
+		text-align : left;	
+		padding:40px 0px 0px 0px;
+	}
+	#slide3Copy a {
+		color:#6ec2c2;	
+		font-style:italic;
+		font-size:16px;
+	}
+	#screenMod3 {
+		padding: 40px 0px 0px 600px;
+			
+	}
+	#screenMod3 img {
+		margin-right:20px;	
+		border: 1px solid black;
+	}
+	#slideshow3 {
+	    position:relative;
+		float:left;
+		margin: 142px 0px 0px 225px;
+	    height:480px;
+	}
+	
+	#slideshow3 IMG {
+	    position:absolute;
+	    top:0;
+	    left:0;
+	    z-index:8;
+	    opacity:0.0;
+	}
+	
+	#slideshow3 IMG.active {
+	    z-index:10;
+	    opacity:1.0;
+	}
+	
+	#slideshow3 IMG.last-active {
+	    z-index:9;
+	}
+	
+	#slide4 {
+		width:1280px;
+		height:720px;
+		background-image : url('img/sample_slides/Slides_04.png');
+		font-size:16px;
+		line-height:24px;
+	}
+	#slide4Copy {
+		width: 268px;
+		padding-top: 100px;
+		padding-left: 700px;
+		text-align : left;
+	}
+	#slide4Copy p {
+		text-align : left;	
+		padding:40px 0px 0px 0px;
+	}
+	#slide4Copy a {
+		color:#d4ce45;	
+		font-style:italic;
+		font-size:16px;
+	}
+	#screenMod4 {
+		padding: 40px 0px 0px 600px;
+			
+	}
+	#screenMod4 img {
+		margin-right:20px;	
+		border: 1px solid black;
+	}
+	#slideshow4 {
+	    position:relative;
+		float:left;
+		margin: 140px 0px 0px 227px;
+	    height:480px;
+	}
+	
+	#slideshow4 IMG {
+	    position:absolute;
+	    top:0;
+	    left:0;
+	    z-index:8;
+	    opacity:0.0;
+	}
+	#slideshow4 IMG.active {
+	    z-index:10;
+	    opacity:1.0;
+	}
+	
+	#slideshow4 IMG.last-active {
+	    z-index:9;
+	}
+	#screenMod4 {
+		padding: 85px 0px 0px 600px;
+			
+	}
+	#screenMod4 img {
+		margin-right:20px;	
+		border: 1px solid black;
+	}
+	#slide5 {
+		width:1280px;
+		height:720px;
+		background-image : url('img/sample_slides/Slides_05.png');
+		font-size:16px;
+		line-height:24px;
+	}
+	#slide5Copy {
+		width: 268px;
+		padding-top: 100px;
+		padding-left: 700px;
+		text-align : left;
+	}
+	#slide5Copy p {
+		text-align : left;	
+		padding:40px 0px 0px 0px;
+	}
+	#slide5Copy a {
+		color:#009919;	
+		font-style:italic;
+		font-size:16px;
+	}
+	#screenMod5 {
+		padding: 40px 0px 0px 600px;
+			
+	}
+	#screenMod5 img {
+		margin-right:20px;	
+		border: 1px solid black;
+	}
+	#slideshow5 {
+	    position:relative;
+		float:left;
+		margin: 142px 0px 0px 225px;
+	    height:480px;
+	}
+	
+	#slideshow5 IMG {
+	    position:absolute;
+	    top:0;
+	    left:0;
+	    z-index:8;
+	    opacity:0.0;
+	}
+	#slideshow5 IMG.active {
+	    z-index:10;
+	    opacity:1.0;
+	}
+	
+	#slideshow5 IMG.last-active {
+	    z-index:9;
+	}
+	#screenMod5 {
+		padding: 40px 0px 0px 440px;	
+	}
+	#screenMod5 img {
+		margin-right:20px;	
+		border: 1px solid black;
+	}
+	
+
+	footer {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 20px;
+		background-color: #5c707c;
+		padding: 5px 0 5px 40px;
+		font-family: 'Ubuntu', serif;
+		font-weight: normal;
+		font-style: normal;
+		z-index: 1000;
+		-moz-box-shadow: -10px -5px 10px #000;
+		-webkit-box-shadow: -10px -5px 10px #000;
+		box-shadow: -10px -5px 10px #000;
+	}
+	
+	footer a {
+		text-decoration: none;
+		padding: 1px 15px;
+		color: #999;
+		font-size: 16px;
+		font-family: 'Ubuntu', serif;
+		font-weight: normal;
+		font-style: normal;
+		background: transparent url('../imgs/back.png');
+		background-repeat: no-repeat;
+		float: left;
+		margin-right: 45px;
+		text-transform:capitalize
+	}
+	
+	#studentName {
+		font-size: 16px;
+		font-family: Ubuntu;
+		color: #BBB;
+		float: left;
+		margin-right: 15px;
+		display: inline;
+		font-weight: normal;
+		font-style: normal;
+		padding-top: 1px;
+		text-transform:capitalize
+	}
+	
+	
+	#projectTitle {
+		text-align: left;
+		font-size: 16px;
+		font-family: Ubuntu;
+		color: white;
+		display: inline;
+		position: relative;
+		top: 1px;
+		text-transform:capitalize
+	}
+
+
+
+
+</style>
+
+
+</head>
+
+<body onload="MM_preloadImages('/images/menu_on.gif')…;initLightbox()" >
+
+<div id="main">
+
+	<H1>The Gents Guide to Style | <span class="HeaderRegularWeightFont">Interactive Mobile Toolkit</span></H1>  
+  
+  
+  
+  <div id="gallery">
+  
+  	<div id="topDiv"></div>
+  
+	<div id="menu">
+    
+    <div id="topDiv"><img src="img/horizontaldiv.png" width="1280" height="1"/></div>
+    
+    <ul>
+        <li class="menuItem"><a href=""><img src="img/nav/smallgentslogo.png" alt="Home" /></a></li>
+        <li class="fbar">&nbsp;</li>
+        <li id= "navbut1" class="menuItem"><a href=""><img src="img/nav/overview.png" alt="Overview" /></a></li>
+       	<li class="fbar">&nbsp;</li>
+        <li id= "navbut2" class="menuItem"><a href=""><img src="img/nav/occasionguide.png" alt="Occasion Guide Tool" /></a></li>
+        <li class="fbar">&nbsp;</li>
+        <li id= "navbut3" class="menuItem"><a href=""><img src="img/nav/how-to.png" alt="How-To Tool" /></a></li>
+        <li class="fbar">&nbsp;</li>
+        <li id= "navbut4" class="menuItem"><a href=""><img src="img/nav/inspiration.png" alt="Inspiration Tool" /></a></li>
+        <li class="fbar">&nbsp;</li>
+        <li id= "navbut5" class="menuItem"><a href=""><img src="img/nav/handbook.png" alt="Handbook Tool" /></a></li>
+    </ul>
+    
+    </div>
+	
+	<div id="bottomDiv"><img src="img/horizontaldiv.png" width="1280" height="1"/></div>
+	
+	
+    <div id="slides">
+   
+    
+    <div class="slide">
+    	<div id="slide1">
+	    	<div id="slide1Logo"></div>
+	    	<div id="slide1Copy"><span class="smallcaps">The Gent's Guide to Style </span>for the iPad, iPhone and iPod touch is an incredibly powerful toolkit designed to help me make more informed decisions about menswear. The Gent's Guide to Style accomplishes this by intergrating a series of tools in to a single toolkit. This application makes learning of styles and traditions of menswear easier and more enjoyable. With The Gent's Guide to Style, there is no long any reason why men can't start dressing well and start using their clothes as a tool for communication, help increase confidence and just having an overall better sense of style. </div>
+		</div>
+    </div>
+
+    
+    
+    <div class="slide">
+    	<div id="slideFeature">
+    	
+	    	<div id="slideFeatureLogo"></div>
+	    	<div id="slideFeatureCopy">
+            	<img src="img/overview_header.png" width="268" height="108" alt="Inspiration" />
+           		<span class="smallcaps">The Gents Guide to Style for the</span> iPad, iPhone and iPod touch is an incredibly powerful toolkit designed to help men make more informed decisions about what they wear. The goal of this application is to give a sense of not only the how but the why. The Gent's Guide to Style is a series of four tools. The tools work together to help give coherent, educated suggestions for how to dress for any occasion. The Occasion Guide is the key tool in navigating the complicate. 
+           		</div>	
+                <div id="slideFeatureCopyColoum">but structure system of men's style. Recommendations are based on occasion, time of day, who will be attending, and the goals of the occasion or event. The suggestions are educated, informed and based on years of tradition and styles in menswear. The supplemental tools; The How-To, Inspiration, and Handbook are are included to be solid resources for executing any of the Occasion Guide's suggestions. With The Gents Guide to Style, there is no long any reason why men can't start dressing well and using there clothes as a tool for communication, increasing confidence and just having an overall better sense of style. 
+                </div>  
+                <div id="overviewIcons">
+                	<ul>
+                		<li>
+                		<a class="subnav1" href="#"><img src="img/nav/occasionguide_icon.png" /></a>
+                		<p>The Occasion Guide is the real star in this application. Easily learn what to wear for any occasion.</p>
+                		</li>
+                		<li>
+                		<a class="subnav2" href="#"><img src="img/nav/how-to_icon.png" /></a>
+                		<p>How-To Articles cover 100s of How-Tos that include curated video and illustrated guides.</p>
+                		</li>
+                		<li>
+                		<a class="subnav3" href="#"><img src="img/nav/inspiration_icon.png" /></a>
+                		<p>Inspiration & Social helps find images, share trends and commenting on media. This is a great way to find new inspiration and share.</p>
+                		</li>
+                		<li>
+                		<a class="subnav4" href="#"><img src="img/nav/handbook_icon.png" /></a>
+                		<p>The Handbook is  not meant to be only the “hows” but also the “whys” of men's styles and traditions.</p>
+                		</li>
+                	</ul>
+                </div>        
+			</div>		
+
+    </div>
+
+
+    <div class="slide">
+        <div id="slide2">
+        	<div id="slide2VideoLaunch">
+            	<a href="video/Final_sm.mov?width=770&height=1000" rel="prettyPhoto" width="770" height="1000" ><img src="img/VideoLaunch.png"/></a>
+            </div>
+        	<div id="slide2Logo"></div>
+	    	<div id="slide2Copy">
+            	<img src="img/occasion_header.png" width="268" height="108" />
+            	<p><span class="smallcaps">A recommendations system </span>that not only factors in the occasions but also on what you are trying to accomplish and say about yourself. This is the featured tool of this powerful toolkit. This application can take a number of unique details and generate a more educated, informed suggestion based on years of tradition and styles in menswear.  </p>
+                 <a href="video/Final_sm.mov?width=770&height=1000" rel="prettyPhoto" width="770" height="1000" >View Demo</a>    |    
+                 <a href="img/screens/guidechoice_01.jpg" rel="shadowbox[Guide]" width="768" height="1024" >View Screenshots</a>
+                 <a href="img/screens/guidechoice_02.jpg" rel="shadowbox[Guide]" width="768" height="1024" ></a>
+                 <a href="img/screens/guidechoice_03.jpg" rel="shadowbox[Guide]" width="768" height="1024" ></a>
+                 <a href="img/screens/guidechoice_04.jpg" rel="shadowbox[Guide]" width="768" height="1024" ></a>
+                 <a href="img/screens/guidechoice_05.jpg" rel="shadowbox[Guide]" width="768" height="1024" ></a>
+                 <a href="img/screens/guide_01.jpg" rel="shadowbox[Guide]" width="768" height="1024" ></a>
+                 <a href="img/screens/guide_02.jpg" rel="shadowbox[Guide]" width="768" height="1024" ></a>
+                 <a href="img/screens/guide_03.jpg" rel="shadowbox[Guide]" width="768" height="1024" ></a>
+                 <a href="img/screens/guide_04.jpg" rel="shadowbox[Guide]" width="768" height="1024" ></a>
+                 <a href="img/screens/guide_05.jpg" rel="shadowbox[Guide]" width="768" height="1024" ></a>
+                 <a href="img/screens/guide_06.jpg" rel="shadowbox[Guide]" width="768" height="1024" ></a>
+                 <a href="img/screens/guide_07.jpg" rel="shadowbox[Guide]" width="768" height="1024" ></a>
+                 <a href="img/screens/guide_08.jpg" rel="shadowbox[Guide]" width="768" height="1024" ></a>
+                 <a href="img/screens/guide_09.jpg" rel="shadowbox[Guide]" width="768" height="1024" ></a>
+                 <a href="img/screens/guide_10.jpg" rel="shadowbox[Guide]" width="768" height="1024" ></a>
+                 <a href="img/screens/guide_11.jpg" rel="shadowbox[Guide]" width="768" height="1024" ></a>
+                 <a href="img/screens/guide_12.jpg" rel="shadowbox[Guide]" width="768" height="1024" ></a>
+            </div>
+            <div id="screenMod2">
+            	 <a href="video/Final_sm.mov?width=770&height=1000" rel="prettyPhoto" width="770" height="1000" ><img src="img/screens/thumbs/occasion_thumb_1.png" width="135" height="180"  /></a>
+                 <a href="img/screens/guidechoice_01.jpg" rel="shadowbox[Guide2]" width="768" height="1024" ><img src="img/screens/thumbs/guidechoice_thumb_1.jpg" width="135" height="180"  /></a>
+                 <a href="img/screens/guidechoice_02.jpg" rel="shadowbox[Guide2]" width="768" height="1024" ></a>
+                 <a href="img/screens/guidechoice_03.jpg" rel="shadowbox[Guide2]" width="768" height="1024" ></a>
+                 <a href="img/screens/guidechoice_04.jpg" rel="shadowbox[Guide2]" width="768" height="1024" ></a>
+                 <a href="img/screens/guidechoice_05.jpg" rel="shadowbox[Guide2]" width="768" height="1024" ></a>
+                 <a href="img/screens/guide_01.jpg" rel="shadowbox[Guide2]" width="768" height="1024" ></a>
+                 <a href="img/screens/guide_02.jpg" rel="shadowbox[Guide2]" width="768" height="1024" ></a>
+                 <a href="img/screens/guide_03.jpg" rel="shadowbox[Guide2]" width="768" height="1024" ></a>
+                 <a href="img/screens/guide_04.jpg" rel="shadowbox[Guide2]" width="768" height="1024" ></a>
+                 <a href="img/screens/guide_05.jpg" rel="shadowbox[Guide2]" width="768" height="1024" ></a>
+                 <a href="img/screens/guide_06.jpg" rel="shadowbox[Guide2]" width="768" height="1024" ></a>
+                 <a href="img/screens/guide_07.jpg" rel="shadowbox[Guide2]" width="768" height="1024" ></a>
+                 <a href="img/screens/guide_08.jpg" rel="shadowbox[Guide2]" width="768" height="1024" ></a>
+                 <a href="img/screens/guide_09.jpg" rel="shadowbox[Guide2]" width="768" height="1024" ></a>
+                 <a href="img/screens/guide_10.jpg" rel="shadowbox[Guide2]" width="768" height="1024" ></a>
+                 <a href="img/screens/guide_11.jpg" rel="shadowbox[Guide2]" width="768" height="1024" ><img src="img/screens/thumbs/guide_thumb_11.jpg" width="135" height="180"  /></a>
+                 <a href="img/screens/guide_12.jpg" rel="shadowbox[Guide2]" width="768" height="1024" ></a>
+            </div>
+		</div>
+    </div>
+   
+   
+    <div class="slide">
+        <div id="slide3">
+        	<div id="slideshow3">
+        		<img src="img/screens/360x480/howto_01.png" width="360" hight="480" class="active" />
+        		<img src="img/screens/360x480/howto_02.png" width="360" hight="480"/>
+        		<img src="img/screens/360x480/howto_03.png" width="360" hight="480"/>
+        		<img src="img/screens/360x480/howto_04.png" width="360" hight="480"/>
+        		<img src="img/screens/360x480/howto_05.png" width="360" hight="480"/>
+        		<img src="img/screens/360x480/howto_06.png" width="360" hight="480"/>
+        		<img src="img/screens/360x480/howto_07.png" width="360" hight="480"/>
+        		<img src="img/screens/360x480/howto_08.png" width="360" hight="480"/>
+        		<img src="img/screens/360x480/howto_09.png" width="360" hight="480"/>
+        		<img src="img/screens/360x480/howto_10.png" width="360" hight="480"/>
+        		<img src="img/screens/360x480/howto_11.png" width="360" hight="480"/>
+        		<img src="img/screens/360x480/howto_12.png" width="360" hight="480"/>
+        	</div>
+        	<div id="slide3Logo"></div>
+	    	<div id="slide3Copy">
+				<img src="img/how-to_header.png" width="268" height="108" alt="Handbook" />
+            	<p><span class="smallcaps">Besides needing to know what</span> to wear, it is important to know how to wear it. This section has more than 100 how-to guides, explanations and step-by-step references for all aspects of men's style. Search by topic and find the answers to <br />all your questions about style. How-to articles feature video and illustrations to accommodate all types of learners.</p>
+                <a href="img/screens/howto_01.jpg" rel="shadowbox[How-To2]" width="768" height="1024" >View Screenshots</a>
+                <a href="img/screens/howto_01.jpg" rel="shadowbox[How-To2]" width="768" height="1024" ></a>
+                <a href="img/screens/howto_02.jpg" rel="shadowbox[How-To2]" width="768" height="1024" ></a>
+                <a href="img/screens/howto_03.jpg" rel="shadowbox[How-To2]" width="768" height="1024" ></a>
+                <a href="img/screens/howto_04.jpg" rel="shadowbox[How-To2]" width="768" height="1024" ></a>
+                <a href="img/screens/howto_05.jpg" rel="shadowbox[How-To2]" width="768" height="1024" ></a>
+                <a href="img/screens/howto_06.jpg" rel="shadowbox[How-To2]" width="768" height="1024" ></a>
+                <a href="img/screens/howto_07.jpg" rel="shadowbox[How-To2]" width="768" height="1024" ></a>
+                <a href="img/screens/howto_08.jpg" rel="shadowbox[How-To2]" width="768" height="1024" ></a>
+                <a href="img/screens/howto_09.jpg" rel="shadowbox[How-To2]" width="768" height="1024" ></a>
+                <a href="img/screens/howto_10.jpg" rel="shadowbox[How-To2]" width="768" height="1024" ></a>
+                <a href="img/screens/howto_11.jpg" rel="shadowbox[How-To2]" width="768" height="1024" ></a>
+                <a href="img/screens/howto_12.jpg" rel="shadowbox[How-To2]" width="768" height="1024" ></a>
+           	</div>
+            <div id="screenMod3">
+                <a href="img/screens/howto_01.jpg" rel="shadowbox[How-To]" width="768" height="1024" ><img src="img/screens/thumbs/howto_thumb_1.png" width="135" height="180" /></a>
+                <a href="img/screens/howto_02.jpg" rel="shadowbox[How-To]" width="768" height="1024" ><img src="img/screens/thumbs/howto_thumb_2.png" width="135" height="180" /></a>
+                <a href="img/screens/howto_03.jpg" rel="shadowbox[How-To]" width="768" height="1024" ><img src="img/screens/thumbs/howto_thumb_3.png" width="135" height="180" /></a>
+                <a href="img/screens/howto_04.jpg" rel="shadowbox[How-To]" width="768" height="1024" ></a>
+                <a href="img/screens/howto_05.jpg" rel="shadowbox[How-To]" width="768" height="1024" ></a>
+                <a href="img/screens/howto_06.jpg" rel="shadowbox[How-To]" width="768" height="1024" ></a>
+                <a href="img/screens/howto_07.jpg" rel="shadowbox[How-To]" width="768" height="1024" ></a>
+                <a href="img/screens/howto_08.jpg" rel="shadowbox[How-To]" width="768" height="1024" ></a>
+                <a href="img/screens/howto_09.jpg" rel="shadowbox[How-To]" width="768" height="1024" ></a>
+                <a href="img/screens/howto_10.jpg" rel="shadowbox[How-To]" width="768" height="1024" ></a>
+                <a href="img/screens/howto_11.jpg" rel="shadowbox[How-To]" width="768" height="1024" ></a>
+                <a href="img/screens/howto_12.jpg" rel="shadowbox[How-To]" width="768" height="1024" ></a>
+            </div>
+                
+          
+		</div>
+    </div>
+    
+    
+    <div class="slide">
+        <div id="slide4">
+        	<div id="slideshow4">
+        		<img src="img/screens/360x480/inspiration_01.png"  width="360" hight="480" class="active" />
+        		<img src="img/screens/360x480/inspiration_03.png"  width="360" hight="480"/>
+        		<img src="img/screens/360x480/inspiration_05.png"  width="360" hight="480"/>
+        		<img src="img/screens/360x480/inspiration_06.png"  width="360" hight="480"/>
+        		<img src="img/screens/360x480/inspiration_08.png"  width="360" hight="480"/>
+                <img src="img/screens/360x480/inspiration_01.png"  width="360" hight="480"/>
+        	</div>
+        	<div id="slide4Logo"></div>
+	    	<div id="slide4Copy">
+            	<img src="img/inspiration_header.png" width="268" height="108" alt="Inspiration" />
+            	<p><span class="smallcaps">The video and image hub is</span> constantly updated with style-minded video and images. It takes full advantage of the iPad and the iPhones high-resolution screens. Also it allows for favoriting, saving, emailing, and commenting on the videos and images. </p>
+            	<a href="img/screens/inspiration_01.jpg" rel="shadowbox[Inspiration2]" width="768" height="1024">View Screenshots</a>
+            	<a href="img/screens/inspiration_02.jpg" rel="shadowbox[Inspiration2]" width="768" height="1024"></a>
+            	<a href="img/screens/inspiration_03.jpg" rel="shadowbox[Inspiration2]" width="768" height="1024"></a>
+            	<a href="img/screens/inspiration_04.jpg" rel="shadowbox[Inspiration2]" width="768" height="1024"></a>
+            	<a href="img/screens/inspiration_05.jpg" rel="shadowbox[Inspiration2]" width="768" height="1024"></a>
+            	<a href="img/screens/inspiration_06.jpg" rel="shadowbox[Inspiration2]" width="768" height="1024"></a>
+            	<a href="img/screens/inspiration_07.jpg" rel="shadowbox[Inspiration2]" width="768" height="1024"></a>
+            	<a href="img/screens/inspiration_08.jpg" rel="shadowbox[Inspiration2]" width="768" height="1024"></a>
+            </div>
+            <div id="screenMod4">
+                <a href="img/screens/inspiration_01.jpg" rel="shadowbox[Inspiration]" width="768" height="1024"><img src="img/screens/thumbs/inspiration_thumb_1.png" width="135" height="180" /></a>
+                <a href="img/screens/inspiration_02.jpg" rel="shadowbox[Inspiration]" width="768" height="1024"></a>
+                <a href="img/screens/inspiration_03.jpg" rel="shadowbox[Inspiration]" width="768" height="1024"></a>
+                <a href="img/screens/inspiration_04.jpg" rel="shadowbox[Inspiration]" width="768" height="1024"></a>
+                <a href="img/screens/inspiration_05.jpg" rel="shadowbox[Inspiration]" width="768" height="1024"><img src="img/screens/thumbs/inspiration_thumb_2.png" width="135" height="180" /></a>
+                <a href="img/screens/inspiration_06.jpg" rel="shadowbox[Inspiration]" width="768" height="1024"></a>
+                <a href="img/screens/inspiration_07.jpg" rel="shadowbox[Inspiration]" width="768" height="1024"></a>
+                <a href="img/screens/inspiration_08.jpg" rel="shadowbox[Inspiration]" width="768" height="1024"><img src="img/screens/thumbs/inspiration_thumb_3.png" width="135" height="180" /></a>
+                
+			</div>
+        </div>
+    </div>
+    
+    
+   <div class="slide">
+        <div id="slide5">
+        	<div id="slideshow5">
+        		<img src="img/screens/360x480/handbook_01.png" width="360" hight="480" class="active" />
+        		<img src="img/screens/360x480/handbook_02.png" width="360" hight="480"/>
+                <img src="img/screens/360x480/handbook_01.png" width="360" hight="480"/>
+        		<img src="img/screens/360x480/handbook_02.png" width="360" hight="480"/>
+
+        	</div>
+        	<div id="slide5Logo"></div>
+	    	<div id="slide5Copy">
+            	<img src="img/handbook_header.png" width="268" height="108" alt="Handbook" />
+            	<p><span class="smallcaps">The Handbook offeres all of the</span> information a man could ever need about all topics involving clothes and style. The Handbook is not meant to be only the "hows" but also the "whys" of men's styles and traditions. This tool is a perfect primer to any information a man could ever need about topics ranging from suits	 to personal grooming and accessories.</p>
+            	<a href="img/screens/handbook_01.jpg" rel="shadowbox[Handbook1]" width="768" height="1024">View Screenshots</a>
+            	<a href="img/screens/handbook_02.jpg" rel="shadowbox[Handbook1]" width="768" height="1024"></a>
+            </div>
+            <div id="screenMod5">
+            	<a href="img/screens/handbook_01.jpg" rel="shadowbox[Handbook2]" width="768" height="1024"><img src="img/screens/thumbs/handbook_thumb_1.png" width="135" height="180" /></a>
+				<a href="img/screens/handbook_02.jpg" rel="shadowbox[Handbook2]" width="768" height="1024"><img src="img/screens/thumbs/handbook_thumb_2.png" width="135" height="180" /></a>
+            </div>	
+            
+		</div>
+    </div>
+    
+    
+    
+  </div>
+    
+</div>
+    <p>© Copyright Imdonahue Design 2011. All rights reserved.</p>
+
+    
+    
+    			<!--<div class="screen">
+					<div class="ipad_large_scroll">
+						<div id="scrollBox">
+							<div id="scrollImages">
+								<img src="resources/img/landing/screen/2a.jpg" />
+								<img src="resources/img/landing/screen/2b.jpg" />
+                                <img src="resources/img/landing/screen/2a.jpg" />
+								<img src="resources/img/landing/screen/2b.jpg" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>-->
+            
+		<footer>
+			<a href="../daapworksShell.html">Back</a>
+			<h3 id="projectTitle">The Gent's Guide to Style</h3>
+			<h3 id="studentName">Ian Donahue</h3>
+		</footer>
+
+</body>
+</html>

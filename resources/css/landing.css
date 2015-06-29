@@ -1,0 +1,127 @@
+
+	.ipad_large {
+		z-index:10; 
+		position:absolute;
+		background: url('../img/landing/ipad.png') top repeat-x; 
+		width:487px; 
+		height:693px; 
+		top:100px; 
+		left:50px;
+	}
+		.ipad_large img {
+			z-index:20; 
+			position:absolute; 
+			width:347;
+			 height:463;
+			 top:63px; 
+			left:73px; 
+			border:none;
+		
+		}
+		
+		.ipad_large p {
+			color:#000000;
+			margin-top:595px;
+			width:487px;
+			font-style: italic;
+			font-size:11px;
+			text-align: center;
+		}
+		
+		
+	.ipad_large_scroll {
+		z-index:10; 
+		/*position:absolute; */
+		background: url('../img/landing/ipad.png') top repeat-x; 
+		width:487px; 
+		height:693px; 
+		top:100px; 
+		left:50px;
+	}
+		
+
+		.ipad_large_scroll p {
+			color:#000000;
+			margin-top:595px;
+			width:487px;
+			font-style: italic;
+			font-size:11px;
+			text-align: center;
+		}
+		
+		#scrollBox {
+			background: url('../img/landing/screen/topbar.png') top repeat-x;
+			top:63px; left:73px;
+			width:347px; height:463px;
+			overflow:hidden;
+			position:relative;
+		}
+		#scrollImages {
+			top:31px;
+			position:absolute;
+			left:0px;
+			width:694px;
+			height:432px;
+			-webkit-transition:all 0.5s ease-in-out;
+			-moz-transition:all 0.5s ease-in-out;
+			-o-transition:all 0.5s ease-in-out;
+			-transition:all 0.5s ease-in-out;
+		}
+		#scrollImages img {
+			
+			padding:0;
+			margin:0;
+			float:left;
+		}
+		
+
+
+	.ipad_large_fade {
+		z-index:10; position:absolute; background: url('../img/landing/ipad.png') top repeat-x; width:487px; height:693px; top:100px; left:50px;
+	}
+		.ipad_large_fade img {
+			z-index:20; position:absolute; width:347; height:463; top:63px; left:73px;
+		}
+
+		.ipad_large_fade p {
+			color:#000000;
+			margin-top:595px;
+			width:487px;
+			font-style: italic;
+			font-size:11px;
+			text-align: center;
+		}
+		
+		.ipad_large_fade img.active {
+			z-index:30;
+		}
+		.ipad_large_fade img.last-active {
+			z-index:25;
+		}
+		
+	
+	.ipad_last {
+		z-index:10; position:absolute; background: url('../img/landing/ipad.png') top repeat-x; width:487px; height:693px; top:100px; left:450px;
+	}
+		.ipad_last img {
+			z-index:20; position:absolute; width:347; height:463; top:63px; left:73px;
+		}
+
+
+
+
+	
+	.ipad_small {
+		z-index:10; position:absolute; background: url('../img/landing/ipad_sml.png') top repeat-x; width:519px; height:683px; top:60px; left:80px;
+	}
+		.ipad_small img {
+			z-index:2; position:absolute; width:338px; height:451px; top:60px; left:92px;
+		}
+		
+	.ipad_landscape {
+		z-index:10; position:absolute; background: url('../img/landing/ipad_lds.png') top repeat-x; width:631px; height:556px; top:155px; left:20px;
+	}
+		.moogaloop {
+			z-index:2; position:absolute; width:451px; height:338px; top:55px; left:91px;
+		}
+			
